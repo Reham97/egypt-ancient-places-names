@@ -1,0 +1,21 @@
+sudo: false
+language: node_js
+cache:
+  directories:
+    - node_modules
+branches:
+  only:
+    - master
+notifications:
+  email: false
+node_js:
+  - iojs
+before_install:
+  - npm i -g npm@^6.14.13
+before_script:
+  - npm prune
+script:
+  - npm run test
+  - npm run build
+after_success:
+  - npm run report-coverage

@@ -12,7 +12,8 @@
     "test": "nyc mocha 'src/index.test.js'",
     "watch:test": "mocha --watch",
     "lint": "eslint src",
-    "validate": "npm-run-all --parallel test lint"
+    "validate": "npm-run-all --parallel test lint",
+    "report-coverage": "cat ./coverage/lcov.info | codecov"
   },
   "keywords": [
     "random",
