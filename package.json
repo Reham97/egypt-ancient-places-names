@@ -1,6 +1,6 @@
 {
   "name": "egypt-ancient-places",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "egypt ancient places",
   "main": "dist/index.js",
   "scripts": {
